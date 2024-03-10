@@ -1,0 +1,24 @@
+@startuml
+
+class Professeur
+
+class Discipline
+
+class Etudiant
+
+<> losange
+
+note right of losange #violet
+    Cours
+end note
+
+
+Professeur "1" -- losange
+losange -- "*" Discipline
+Etudiant "5..30" -- losange
+@enduml
+
+'Relation et classe effacées
+'class Cours
+'Cours "1" - losange
+'Professeur "1" -- "*" Discipline
